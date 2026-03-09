@@ -1907,17 +1907,41 @@ footer a:hover {
 /* ── RESPONSIVE ───────────────────────────────── */
 @media(max-width:900px) {
   header {
-    padding: 0 1.2rem;
-    height: 75px;
+    padding: 0 .85rem;
+    height: 74px;
   }
 
   .logo-circle {
-    width: 50px;
-    height: 50px;
+    width: 42px;
+    height: 42px;
   }
 
   .logo-main {
-    font-size: 1.3rem;
+    font-size: 1.05rem;
+  }
+
+  .logo-container {
+    gap: .65rem;
+    min-width: 0;
+  }
+
+  .logo-details {
+    min-width: 0;
+  }
+
+  .logo-sub {
+    display: none;
+  }
+
+  .header-right {
+    gap: .4rem;
+    flex-shrink: 0;
+  }
+
+  .ig-btn {
+    padding: .42rem .58rem;
+    font-size: .64rem;
+    letter-spacing: .04em;
   }
 
   nav {
@@ -2074,6 +2098,60 @@ footer a:hover {
     border-radius: 8px;
     width: 100%;
     font-family: 'Jost', sans-serif;
+  }
+}
+
+@media(max-width:560px) {
+  header {
+    padding: 0 .7rem;
+  }
+
+  .logo-main {
+    font-size: .92rem;
+    letter-spacing: .03em;
+  }
+
+  .lang-toggle {
+    padding: 0 .35rem !important;
+    font-size: .82rem;
+  }
+
+  .ig-btn {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 0;
+  }
+
+  .ig-btn svg {
+    width: 14px;
+    height: 14px;
+  }
+
+  .hero {
+    min-height: 520px;
+  }
+
+  .hero-content {
+    padding: 0 1rem;
+  }
+
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero-meta span {
+    font-size: .68rem;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+  }
+
+  .cat-grid {
+    grid-template-columns: 1fr;
   }
 }
 
